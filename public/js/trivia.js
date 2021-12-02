@@ -1,19 +1,19 @@
 var myQuestions = [
     {
-      question: "What year was HTML invented?",
+      question: "When did Garry's Mod come out?",
       answers: {
-        a: '1982',
-        b: '1993',
-        c: '2001'
+        a: '2006',
+        b: '2012',
+        c: '2004'
       },
-      correctAnswer: 'b'
+      correctAnswer: 'a'
     },
     {
-      question: "What Is The Most Popular Browser?",
+      question: "When did Freddie Mercury die?",
       answers: {
-        a: 'Google Chrome',
-        b: 'FireFox',
-        c: 'Internet Explorer'
+        a: '1991',
+        b: '2000',
+        c: '1986'
       },
       correctAnswer: 'a'
     },
@@ -21,17 +21,17 @@ var myQuestions = [
         question: "Which Is The Most Expensive Phone?",
         answers: {
           a: 'Apple Iphone 13',
-          b: 'Samsung Galaxy Z',
+          b: 'Samsung Galaxy Fold Z',
           c: 'Razr (2nd Gene)'
         },
         correctAnswer: 'b'
     },
     {
-        question: "How Many Students Attend Okaland??",
+        question: "Whats the worst department at Oakland?",
         answers: {
-          a: '30,400',
-          b: '18,200',
-          c: '15,100'
+          a: 'None',
+          b: 'CSI',
+          c: 'Math'
         },
         correctAnswer: 'c'
     },
@@ -86,9 +86,9 @@ var myQuestions = [
         userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
         if(userAnswer===questions[i].correctAnswer){
           numCorrect++;
-          answerContainers[i].style.color = '#ff895d';
+          answerContainers[i].style.color = 'rgb(0,0,255)';
         }else{
-          answerContainers[i].style.color = 'transparent';
+          answerContainers[i].style.color = 'rgb(255,0,0';
         }
       }
   
