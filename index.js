@@ -18,8 +18,8 @@ app.get('/resume', function(req, res) {
   res.render('../views/resume.ejs');
 });
 
-app.get('/fun_facts', function(req, res) {
-  res.render('../views/fun_facts.ejs');
+app.get('/fun_fact', function(req, res) {
+  res.render('../views/fun_fact.ejs');
 });
 
 app.get('/blog', function(req, res) {
