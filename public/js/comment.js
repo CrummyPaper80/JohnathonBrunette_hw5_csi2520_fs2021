@@ -37,12 +37,10 @@ function addComment(ev) {
         wrapDiv.innerHTML = '';
         wrapDiv.append(textBox, replyButton, likeButton, deleteButton);
     }
-    setOnLocalStorage();
+    
 }
 
-function setOnLocalStorage () {
-    localStorage.setItem('template', document.getElementById('allComments').innerHTML);
-}
+
 function hasClass(elem, className) {
     return elem.className.split(' ').indexOf(className) > -1;
 }
@@ -68,10 +66,10 @@ document.getElementById('allComments').addEventListener('click', function (e) {
     } else if(hasClass(e.target, 'likeComment')) {
          const likeBtnValue = e.target.innerHTML;
          e.target.innerHTML = likeBtnValue !== 'Like' ? Number.parseInt(likeBtnValue) + 1 : 1;
-        setOnLocalStorage();
+        
     } else if(hasClass(e.target, 'cancelReply')) {
         e.target.parentElement.innerHTML = '';
-        setOnLocalStorage();
+        
     } else if(hasClass(e.target, 'deleteComment')) {
         e.target.parentElement.remove();
     }
