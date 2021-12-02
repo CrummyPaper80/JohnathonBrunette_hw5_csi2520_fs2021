@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <script src="https://kit.fontawesome.com/16b00824a7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../public/media/img/OU_logo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="../public/css/styling_sheet.css">
+    <script src="../public/js/comment.js" defer></script>
+</head>
+<body>
+    <header id="page_header">
+        <nav>
+            <menu>
+                <a href="../views/index.ejs">Home Page</a>
+            <a href="../views/resume.ejs">Resume Page</a>
+            <a href="../views/fun_fact.ejs">Fun Facts Page</a>
+            <a href="../views/blog.ejs">My Blog</a>
+            <a href="../views/trivia.ejs">Trivia</a>
+            </menu>
+        </nav>
+        <h1 id="header_1">My Blog</h1>
+    </header>
+
+    <main id="main_content">
+        <div class="row">
+            <div class="leftcolumn">
+              <div class="card">
+                <h2>Below you will find a favorite scene of mine from one of my favorite movies</h2>
+                <h5>Doctor Sleep</h5>
+                <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/71HG4F0QXyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <p>I love this scene because it is in one of my favorite movies of all time, Doctor Sleep. This movie is a sequel to The Shining. The reason I like this 
+                    scene is because it shows how powerful someone with the "shine" can be and how you can set up traps within your mind. In this scene the lady is figuring out 
+                    how to control her "shine" and stop the bad people from killing her and stealing her "shine".
+                </p>
+              </div>
+              <div class="container">
+                <label for="comment" name="comment">Post a Comment</label>
+                <br>
+                <textarea id="comment"></textarea>
+                <br>
+                <button id="addComments">Add Comment</button>
+                <div id="allComments"></div>
+            </div>
+          </div>
+          <script src="../public/js/comment.js"></script>
+    </main>
+    
+    <hr>
+    <footer id="page_footer">
+        Property of Johnathon Brunette &copy; 
+    </footer>
+
+</body>
+</html>
